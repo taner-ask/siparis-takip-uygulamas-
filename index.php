@@ -480,6 +480,9 @@ include 'fonksiyonlar.php';
     "lengthChange": true, //Tabloda öğre gösterilme gözüksün mü? true veya false
     "info": true,
     dom: "<'row mobilgizleexport gizlemeyiac'<'col-md-6'l><'col-md-6'f><'col-md-4 d-none d-print-block'B>>rtip",
+    "language": {
+      "url": "//cdn.datatables.net/plug-ins/1.13.1/i18n/tr.json"
+    }
 
 });
 </script>
