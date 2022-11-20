@@ -1,5 +1,6 @@
 <?php 
-include'header.php' 
+include 'header.php';
+include 'fonksiyonlar.php';
 ?>
 
 <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -247,7 +248,7 @@ include'header.php'
                 </span>
               </button>
             </form>
-            <form class="mx-1" onclick="return confirm('Silmek İstediğinize Emin misiniz?')" action="islemler/islem.php" method="POST">
+            <form class="mx-1" onclick="return sil_alert()" action="islemler/islem.php" method="POST">
               <input type="hidden" name="sip_id" value="<?php echo $sipariscek['sip_id'] ?>">
               <button type="submit" name="siparissilme" class="btn btn-danger btn-sm btn-icon-split">
                 <span class="icon text-white-60">
@@ -336,6 +337,9 @@ include'header.php'
     "lengthChange": true, //Tabloda öğre gösterilme gözüksün mü? true veya false
     "info": true,
     dom: "<'row mobilgizleexport gizlemeyiac'<'col-md-6'l><'col-md-6'f><'col-md-4 d-none d-print-block'B>>rtip",
+    "language": {
+      "url": "//cdn.datatables.net/plug-ins/1.13.1/i18n/tr.json"
+    }
 
   });
 

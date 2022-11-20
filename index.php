@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php 
+include 'header.php';
+include 'fonksiyonlar.php';
+?>
 
 <div class="container-fluid p-2">
 	<div class="row" style="margin-bottom: -20px;">
@@ -257,7 +260,7 @@
 											</span>
 										</button>
 									</form>
-									<form class="mx-1" onclick="return confirm('Silmek İstediğinize Emin misiniz?')" action="islemler/islem.php" method="POST">
+									<form class="mx-1" onclick="return sil_alert()" action="islemler/islem.php" method="POST">
 										<input type="hidden" name="proje_id" value="<?php echo $projecek['proje_id'] ?>">
 										<button type="submit" name="projesilme" class="btn btn-danger btn-sm btn-icon-split">
 											<span class="icon text-white-60">
@@ -265,7 +268,6 @@
 											</span>
 										</button>
 									</form>
-
 									<form action="proje_gor.php" method="POST">
 										<input type="hidden" name="proje_id" value="<?php echo $projecek['proje_id'] ?>">
 										<button type="submit" name="proje_bak" class="btn btn-primary btn-sm btn-icon-split">
@@ -348,7 +350,7 @@
 											</span>
 										</button>
 									</form>
-									<form class="mx-1" onclick="return confirm('Silmek İstediğinize Emin misiniz?')"action="islemler/islem.php" method="POST">
+									<form class="mx-1" onclick="return sil_alert()" action="islemler/islem.php" method="POST">
 										<input type="hidden" name="sip_id" value="<?php echo $sipariscek['sip_id'] ?>">
 										<button type="submit" name="siparissilme" class="btn btn-danger btn-sm btn-icon-split">
 											<span class="icon text-white-60">
@@ -433,6 +435,9 @@
     "lengthChange": true, //Tabloda öğre gösterilme gözüksün mü? true veya false
     "info": true,
     dom: "<'row mobilgizleexport gizlemeyiac'<'col-md-6'l><'col-md-6'f><'col-md-4 d-none d-print-block'B>>rtip",
+    "language": {
+    	"url": "//cdn.datatables.net/plug-ins/1.13.1/i18n/tr.json"
+    }
 
 });
 
@@ -479,11 +484,3 @@
 });
 </script>
 <!-- siparişler tablosu ayarları çıkış -->
-
-
-<script type="text/javascript">
-	Swal.fire({
-		type: 'success',
-		title: 'İşlem Başarılı',
-	})
-</script>

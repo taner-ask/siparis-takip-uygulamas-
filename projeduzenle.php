@@ -1,4 +1,4 @@
-<?php include 'header.php'; 
+<?php include 'header.php';
 
 if (isset($_POST['proje_id'])) {
 	$projesor=$db->prepare("SELECT * FROM proje WHERE proje_id=:id");

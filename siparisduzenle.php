@@ -78,7 +78,7 @@ if (isset($_POST['sip_id'])) {
 						<textarea name="sip_detay" class="form-control" id="sip_detay"><?php echo $sipariscek['sip_detay'] ?></textarea>
 					</div>
 				</div>
-				<button type="submit" name="siparisduzenle" class="btn btn-primary">Kaydet</button>
+				<button type="submit"  name="siparisduzenle" class="btn btn-primary">Kaydet</button>
 			</form>
 		</div>
 	</div>

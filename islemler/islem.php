@@ -92,6 +92,7 @@ if (isset($_POST['projesilme'])) {
 	$kontrol=$sil->execute(array('proje_id' => $_POST['proje_id']
 ));
 
+
 	if ($kontrol) {
 		header("location:../index.php");
 	}else{

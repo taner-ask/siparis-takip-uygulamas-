@@ -11,20 +11,21 @@ function turkce_temizle($metin) {
 };
 
 
-
-
-
 ?>
 
+
 <script type="text/javascript">
-	function onay()
-{
-  if(confirm('Are you sure you want to submit this form?')){
-       Swal.fire({
-		type: 'success',
-		title: 'silme Başarılı',
-	})
-  }
-}
+	function sil_alert()
+	{
+
+		if(confirm('Silmek İstediğinize Emin Misiniz?')){
+			Swal.fire({
+				type: 'success',
+				title: 'İşlem Başarılı',
+			})
+		}
+		else
+			return false;
+	}
 
 </script>
