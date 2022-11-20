@@ -51,54 +51,8 @@ $ayarcek=$ayarsor->fetch(PDO::FETCH_ASSOC);
 
 </div>
 
-<!-- Bootstrap core JavaScript-->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Custom scripts for all pages-->
-<script src="js/sb-admin-2.min.js"></script>
 
-</body>
-
-</html>
-<script src="vendor/sweetalert/sweetalert2.all.min.js"></script>
-<?php if (@$_GET['durum']=="hata")  {?>  
-  <script>
-    Swal.fire({
-      type: 'error',
-      title: 'Oturum Açma İşlemi Başarısız',
-      text: 'Girdiğiniz Bilgileri Kontrol Edin Lütfen',
-      showConfirmButton: true,
-      confirmButtonText: 'Kapat'
-    })
-  </script>
-<?php } ?>
-
-<?php if (@$_GET['durum']=="izinsiz")  {?>  
-  <script>
-    Swal.fire({
-      type: 'error',
-      title: 'Giriş İzniniz Yok',
-      text: 'Sayfayı Görüntüleyebilmek İçin Lütfen Oturum Açın',
-      showConfirmButton: true,
-      confirmButtonText: 'Kapat'
-    })
-  </script>
-<?php } ?>
-
-<?php if (@$_GET['durum']=="suphe")  {?>  
-  <script>
-    Swal.fire({
-      type: 'error',
-      title: 'Şüpheli Hareket',
-      text: 'Şüpheli Bir Hareket Tespit Edildi Lütfen Tekrar Oturum Açın',
-      showConfirmButton: true,
-      confirmButtonText: 'Kapat'
-    })
-  </script>
-<?php } ?>
 
 
