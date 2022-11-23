@@ -203,9 +203,11 @@ include 'fonksiyonlar.php';
 </div>
 
 
-<!-- projeler tablosu giriş kısmı -->
-<div class="row justify-content-center">
-	<div class="col-md-10">
+<div class="row justify-content-center col-md-12">
+
+	<!-- projeler tablosu giriş kısmı -->
+
+	<div class="col-md-6">
 		<div class="card">
 			<div class="card-header">
 				<h5 class="card-title">Projeler</h5>
@@ -287,15 +289,12 @@ include 'fonksiyonlar.php';
 	</div>
 </div>
 </div>
+	<!-- projeler tablosu çıkış kısmı -->
 
-</div>
-<!-- projeler tablosu çıkış kısmı -->
+	
 
-
-
-<!-- siparişler tablosu giriş kısmı -->
-<div class="row mt-5 justify-content-center">
-	<div class="col-md-10">
+	<!-- siparişler tablosu giriş kısmı -->
+	<div class="col-md-6">
 		<div class="card">
 			<div class="card-header">
 				<h5 class="card-title">Siparişler</h5>
@@ -380,10 +379,9 @@ include 'fonksiyonlar.php';
 	</div>
 </div>
 </div>
-
-</div>
 <!-- siparişler tablosu çıkış kısmı -->
 
+</div>
 
 <?php include 'footer.php'; ?>
 
@@ -487,3 +485,4 @@ include 'fonksiyonlar.php';
 });
 </script>
 <!-- siparişler tablosu ayarları çıkış -->
+
