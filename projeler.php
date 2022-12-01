@@ -336,6 +336,7 @@ include 'fonksiyonlar.php';
     "ordering": true,  //Tabloda sıralama özelliği gözüksün mü? true veya false
     "searching": true,  //Tabloda arama yapma alanı gözüksün mü? true veya false
     "lengthChange": true, //Tabloda öğre gösterilme gözüksün mü? true veya false
+    "pageLength" : 5,
     "info": true,
     dom: "<'row mobilgizleexport gizlemeyiac'<'col-md-6'l><'col-md-6'f><'col-md-4 d-none d-print-block'B>>rtip",
     "language": {
