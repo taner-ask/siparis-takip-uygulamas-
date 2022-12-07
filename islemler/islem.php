@@ -15,6 +15,12 @@ if (isset($_POST['ayarkaydet'])) {
 		'site_aciklama' =>$_POST['site_aciklama'],
 		'site_sahibi' =>$_POST['site_sahibi'],
 	));
+	if ($ayarkaydet) {
+		header("location:../index.php");
+	} else { 
+		echo "BAŞARISIZ.";
+		exit;
+	}
 }
 
 if (isset($_POST['oturumac'])) {
